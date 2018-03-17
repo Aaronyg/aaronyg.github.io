@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2018-03-13T08:26:21.678Z</updated>
+  <updated>2018-03-17T11:34:30.984Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,37 +17,57 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>hexo</title>
-    <link href="http://yoursite.com/2018/03/13/hexo%E7%AC%94%E8%AE%B0/"/>
-    <id>http://yoursite.com/2018/03/13/hexo笔记/</id>
-    <published>2018-03-13T03:52:38.000Z</published>
-    <updated>2018-03-13T08:26:21.678Z</updated>
-    
-    <content type="html"><![CDATA[<h2 id="hexo-note"><a href="#hexo-note" class="headerlink" title="hexo note"></a>hexo note</h2><h2 id="git-hexo-node-js"><a href="#git-hexo-node-js" class="headerlink" title="git hexo node.js"></a>git hexo node.js</h2><ol><li>hexo s –debug  本地浏览器的localhost:4000 预览博文效果</li><li>hexo g -d  发布到github上</li></ol><h2 id="设置hexo主题"><a href="#设置hexo主题" class="headerlink" title="设置hexo主题"></a>设置hexo主题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ git clone https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git themes/tranquilp</span><br></pre></td></tr></table></figure><h2 id="部署到GitHub-Pages"><a href="#部署到GitHub-Pages" class="headerlink" title="部署到GitHub Pages"></a>部署到GitHub Pages</h2>]]></content>
+    <title>blockchain</title>
+    <link href="http://yoursite.com/2018/03/19/blockchain/"/>
+    <id>http://yoursite.com/2018/03/19/blockchain/</id>
+    <published>2018-03-19T03:22:22.000Z</published>
+    <updated>2018-03-17T11:34:30.984Z</updated>
     
     <summary type="html">
     
-      
-      
-        &lt;h2 id=&quot;hexo-note&quot;&gt;&lt;a href=&quot;#hexo-note&quot; class=&quot;headerlink&quot; title=&quot;hexo note&quot;&gt;&lt;/a&gt;hexo note&lt;/h2&gt;&lt;h2 id=&quot;git-hexo-node-js&quot;&gt;&lt;a href=&quot;#git-hexo-
-      
-    
     </summary>
     
+    
+      <category term="blockchain" scheme="http://yoursite.com/tags/blockchain/"/>
     
   </entry>
   
   <entry>
-    <title>blockchain</title>
-    <link href="http://yoursite.com/2018/03/13/blockchain/"/>
-    <id>http://yoursite.com/2018/03/13/blockchain/</id>
-    <published>2018-03-13T03:22:22.000Z</published>
-    <updated>2018-03-13T03:22:22.240Z</updated>
+    <title>git</title>
+    <link href="http://yoursite.com/2018/03/17/git/"/>
+    <id>http://yoursite.com/2018/03/17/git/</id>
+    <published>2018-03-17T03:22:22.000Z</published>
+    <updated>2018-03-17T11:33:35.755Z</updated>
     
     <summary type="html">
     
     </summary>
     
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>hexo + github page 搭建个人博客</title>
+    <link href="http://yoursite.com/2018/03/13/hexo/"/>
+    <id>http://yoursite.com/2018/03/13/hexo/</id>
+    <published>2018-03-13T03:22:22.000Z</published>
+    <updated>2018-03-17T11:33:42.919Z</updated>
+    
+    <content type="html"><![CDATA[<h2 id="安装node-js"><a href="#安装node-js" class="headerlink" title="安装node.js"></a>安装node.js</h2><p>下载并安装：<a href="https://nodejs.org/en/" target="_blank" rel="noopener">node.js</a> </p><h2 id="安装-git"><a href="#安装-git" class="headerlink" title="安装 git"></a>安装 git</h2><p>下载并安装：<a href="https://git-scm.com/" target="_blank" rel="noopener">git</a> </p><h2 id="安装hexo"><a href="#安装hexo" class="headerlink" title="安装hexo"></a>安装hexo</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo-cli -g   #安装hexo   </span><br><span class="line">npm install hexo-deployer-git --save #部署到github page</span><br><span class="line"></span><br><span class="line">hexo init #初始化配置</span><br><span class="line"></span><br><span class="line">hexo g  #生成静态页面</span><br><span class="line">hexo s  #本地浏览器的localhost:4000 预览博文效果</span><br><span class="line"></span><br><span class="line">hexo g -d  #发布到github上</span><br></pre></td></tr></table></figure><h2 id="设置hexo主题"><a href="#设置hexo主题" class="headerlink" title="设置hexo主题"></a>设置hexo主题</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">$ hexo clean</span><br><span class="line">$ git clone https://github.com/LouisBarranqueiro/hexo-theme-tranquilpeak.git themes/tranquilp</span><br></pre></td></tr></table></figure>]]></content>
+    
+    <summary type="html">
+    
+      
+      
+        &lt;h2 id=&quot;安装node-js&quot;&gt;&lt;a href=&quot;#安装node-js&quot; class=&quot;headerlink&quot; title=&quot;安装node.js&quot;&gt;&lt;/a&gt;安装node.js&lt;/h2&gt;&lt;p&gt;下载并安装：&lt;a href=&quot;https://nodejs.org/en/&quot; tar
+      
+    
+    </summary>
+    
+    
+      <category term="tools" scheme="http://yoursite.com/tags/tools/"/>
     
   </entry>
   
