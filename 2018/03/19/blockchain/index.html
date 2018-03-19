@@ -8,18 +8,21 @@
   <link rel="dns-prefetch" href="http://yoursite.com">
   <title>blockchain | Aaron&#39;s blog</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="区块链本质区块区块链由一个个区块（block）组成 挖矿">
+  <meta name="description" content="区块链本质区块链(blockchain)本质上是一个对等网络(peer-topeer)的分布式账本数据库。 区块链本身其实是一串链接的数据区块，其链接指针是采用密码学哈希算法对区块头进行处理所产生的区块头哈希值。  区块链分类：1.以参与方式分类：公开链(Public BlockChain)、联盟链(Consortium BlockChain)和私有链(Private BlockChain)。2.">
 <meta name="keywords" content="IT•blockchain">
 <meta property="og:type" content="article">
 <meta property="og:title" content="blockchain">
 <meta property="og:url" content="http://yoursite.com/2018/03/19/blockchain/index.html">
 <meta property="og:site_name" content="Aaron&#39;s blog">
-<meta property="og:description" content="区块链本质区块区块链由一个个区块（block）组成 挖矿">
+<meta property="og:description" content="区块链本质区块链(blockchain)本质上是一个对等网络(peer-topeer)的分布式账本数据库。 区块链本身其实是一串链接的数据区块，其链接指针是采用密码学哈希算法对区块头进行处理所产生的区块头哈希值。  区块链分类：1.以参与方式分类：公开链(Public BlockChain)、联盟链(Consortium BlockChain)和私有链(Private BlockChain)。2.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2018-03-19T01:57:31.174Z">
+<meta property="og:image" content="http://yoursite.com/2018/03/19/assets/img/blockchain.jpg">
+<meta property="og:image" content="http://yoursite.com/2018/03/19/assets/img/block_struct.jpg">
+<meta property="og:updated_time" content="2018-03-19T05:41:34.920Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="blockchain">
-<meta name="twitter:description" content="区块链本质区块区块链由一个个区块（block）组成 挖矿">
+<meta name="twitter:description" content="区块链本质区块链(blockchain)本质上是一个对等网络(peer-topeer)的分布式账本数据库。 区块链本身其实是一串链接的数据区块，其链接指针是采用密码学哈希算法对区块头进行处理所产生的区块头哈希值。  区块链分类：1.以参与方式分类：公开链(Public BlockChain)、联盟链(Consortium BlockChain)和私有链(Private BlockChain)。2.">
+<meta name="twitter:image" content="http://yoursite.com/2018/03/19/assets/img/blockchain.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Aaron&#39;s blog" type="application/atom+xml">
   
@@ -167,8 +170,24 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h3 id="区块链本质"><a href="#区块链本质" class="headerlink" title="区块链本质"></a>区块链本质</h3><h3 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h3><p>区块链由一个个区块（block）组成</p>
-<h3 id="挖矿"><a href="#挖矿" class="headerlink" title="挖矿"></a>挖矿</h3>
+        <h3 id="区块链本质"><a href="#区块链本质" class="headerlink" title="区块链本质"></a>区块链本质</h3><p>区块链(blockchain)本质上是一个对等网络(peer-topeer)的分布式账本数据库。 区块链本身其实是一串链接的数据区块，其链接指针是采用密码学哈希算法对区块头进行处理所产生的区块头哈希值。</p>
+<blockquote>
+<p>区块链分类：<br>1.以参与方式分类：公开链(Public BlockChain)、联盟链(Consortium BlockChain)和私有链(Private BlockChain)。<br>2.以链与链的关系分类：主链和侧链。</p>
+</blockquote>
+<p>区块链系统包含技术：</p>
+<p><img src="../assets/img/blockchain.jpg" alt="区块链"></p>
+<h3 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h3><p>区块链由一个个区块（block）组成。 每个区块一般包含区块头(Header)和区块体(Body)两部分。</p>
+<p><img src="../assets/img/block_struct.jpg" alt="区块结构"></p>
+<h3 id="挖矿"><a href="#挖矿" class="headerlink" title="挖矿"></a>挖矿</h3><p>所谓挖矿，实际上是穷举随机数算法，把上个区块的哈希值加上10分钟内的全部交易单打包，再加上一个随机数，算出一个256位的字符串哈希值，输入的随机数Nonce使哈希值满足一定条件就获得这个区块的交易记账权。</p>
+<blockquote>
+<p>因此，挖矿实际是计算哈希值的过程，矿工则指计算哈希值的服务器。</p>
+</blockquote>
+<h3 id="分布式"><a href="#分布式" class="headerlink" title="分布式"></a>分布式</h3><h3 id="共识算法"><a href="#共识算法" class="headerlink" title="共识算法"></a>共识算法</h3><p>要求在没有中心节点的情况下保证各个诚实节点记账的一致性。<br>区块链共识机制目前主要有4类：<br>1.POW<br>工作量证明机制<br>2.POS<br>3.DPOS<br>4.分布式一致性算法</p>
+<h3 id="哈希函数"><a href="#哈希函数" class="headerlink" title="哈希函数"></a>哈希函数</h3><h3 id="加密算法"><a href="#加密算法" class="headerlink" title="加密算法"></a>加密算法</h3><ul>
+<li>非对称加密算法</li>
+</ul>
+<h3 id="比特币"><a href="#比特币" class="headerlink" title="比特币"></a>比特币</h3><p>获取比特币有3中途径： 一是作为矿工挖矿获得，二是线上交易所购买或者线下通过中间人购买，三是作为商家收取比特币</p>
+<h3 id="以太坊"><a href="#以太坊" class="headerlink" title="以太坊"></a>以太坊</h3>
       
 
       
