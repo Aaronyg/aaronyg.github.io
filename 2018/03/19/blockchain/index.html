@@ -16,14 +16,14 @@
 <meta property="og:site_name" content="Aaron&#39;s blog">
 <meta property="og:description" content="区块链本质区块链(blockchain)本质上是一个对等网络(peer-topeer)的分布式账本数据库。 区块链本身其实是一串链接的数据区块，其链接指针是采用密码学哈希算法对区块头进行处理所产生的区块头哈希值。  区块链分类：1.以参与方式分类：公开链(Public BlockChain)、联盟链(Consortium BlockChain)和私有链(Private BlockChain)。2.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/source/assets/img/blockchain.jpg">
-<meta property="og:image" content="http://yoursite.com/source/assets/img/block_struct.jpg">
-<meta property="og:image" content="http://yoursite.com/source/assets/img/hash.jpg">
-<meta property="og:updated_time" content="2018-08-28T10:45:34.313Z">
+<meta property="og:image" content="http://yoursite.com/assets/img/blockchain.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/block_struct.jpg">
+<meta property="og:image" content="http://yoursite.com/assets/img/hash.jpg">
+<meta property="og:updated_time" content="2018-08-28T10:46:29.623Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="blockchain">
 <meta name="twitter:description" content="区块链本质区块链(blockchain)本质上是一个对等网络(peer-topeer)的分布式账本数据库。 区块链本身其实是一串链接的数据区块，其链接指针是采用密码学哈希算法对区块头进行处理所产生的区块头哈希值。  区块链分类：1.以参与方式分类：公开链(Public BlockChain)、联盟链(Consortium BlockChain)和私有链(Private BlockChain)。2.">
-<meta name="twitter:image" content="http://yoursite.com/source/assets/img/blockchain.jpg">
+<meta name="twitter:image" content="http://yoursite.com/assets/img/blockchain.jpg">
   
     <link rel="alternative" href="/atom.xml" title="Aaron&#39;s blog" type="application/atom+xml">
   
@@ -176,9 +176,9 @@
 <p>区块链分类：<br>1.以参与方式分类：公开链(Public BlockChain)、联盟链(Consortium BlockChain)和私有链(Private BlockChain)。<br>2.以链与链的关系分类：主链和侧链。</p>
 </blockquote>
 <p>区块链系统包含技术：</p>
-<p><img src="/source/assets/img/blockchain.jpg" alt="区块链"></p>
+<p><img src="/assets/img/blockchain.jpg" alt="区块链"></p>
 <h3 id="区块"><a href="#区块" class="headerlink" title="区块"></a>区块</h3><p>区块链由一个个区块（block）组成。 每个区块一般包含区块头(Header)和区块体(Body)两部分。</p>
-<p><img src="/source/assets/img/block_struct.jpg" alt="区块结构"></p>
+<p><img src="/assets/img/block_struct.jpg" alt="区块结构"></p>
 <h3 id="挖矿"><a href="#挖矿" class="headerlink" title="挖矿"></a>挖矿</h3><p>所谓挖矿，实际上是穷举随机数算法，把上个区块的哈希值加上10分钟内的全部交易单打包，再加上一个随机数，算出一个256位的字符串哈希值，输入的随机数Nonce使哈希值满足一定条件就获得这个区块的交易记账权。</p>
 <blockquote>
 <p>因此，挖矿实际是计算哈希值的过程，矿工则指计算哈希值的服务器。</p>
@@ -222,7 +222,7 @@
 <blockquote>
 <p> 比特币系统一般从操作系统底层的一个密码学安全的随机源中取出一个256位随机数作为私钥，私钥总数为2256个，所以很难通过遍历所有可能的私钥得出与公钥的对应的私钥。用户使用的私钥还会通过SHA256和Base58转换成易书写和识别的50位长度的私钥，公钥则首先由私钥和Secp256k1椭圆曲线算法生成65字节长度的随机数。一般情况下，比特币钱包的地址也由公钥所生成，其生成过程为首先将公钥进行SHA256和RIPEMD160双哈希运算，并生成20字节长度的摘要结果（即Hash160结果），这个将作为比特币地址的主体（body）信息，再在前面加上版本前缀0x00，在后面添加4个字节的地址校验码。地址校验码通过对摘要结果进行两次SHA256运算，取哈希值的前4位产生。最后通过Base58处理把连在一起的版本前缀、主体信息和校验码转换成可以容易让人识别的比特币字符地址。</p>
 </blockquote>
-<p><img src="/source/assets/img/hash.jpg" alt="hash"></p>
+<p><img src="/assets/img/hash.jpg" alt="hash"></p>
 <ul>
 <li>工作量证明<blockquote>
 <p> 要求得到的哈希结果（以十六进制的形式表示）以若干个0开头的。按照这个规则，由x=1出发，递增x的值，我们需要经过2688次哈希计算才能找到前3位均为0的哈希值，而要找到前6位均为0的哈希值，则需进行620969次哈希计算。也就是说，没有更快捷的方法来产生一个满足要求的哈希结果。这样通过哈希运算得出的符合特定要求的哈希值，可以作为共识算法中的工作量证明。</p>
